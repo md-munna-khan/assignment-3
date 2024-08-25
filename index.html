@@ -10,6 +10,8 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+
+
 <script>
     tailwind.config = {
       theme: {
@@ -29,9 +31,9 @@
 <!-- navbar -->
     <nav>
         <div class="navbar bg-base-100">
-            <div class="navbar-end">
+            <div class="navbar-start">
               <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden justify-items-end">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5"
@@ -45,6 +47,7 @@
                       d="M4 6h16M4 12h8m-8 6h16" />
                   </svg>
                 </div>
+                <!-- <div  class="lg:hidden  justify-items-end items-end text-end text-3xl  "> <i class="fa-solid fa-bars"></i></div> -->
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
@@ -56,9 +59,10 @@
                  
                 </ul>
               </div>
-             
-               <h6> <i class=" p-2    rounded-full  bg-arrow-primary -rotate-45 items-center justify-center inline-flex fa-solid fa-arrow-right"></i></h6>
-              <a class="btn btn-ghost  font-bold text-3xl">Rinterio</a>
+
+              <h6> <i class=" p-2    rounded-full  bg-arrow-primary -rotate-45  justify-start inline-flex fa-solid fa-arrow-right"></i></h6>
+            <a class="btn btn-ghost justify-start  font-bold text-3xl">Rinterio</a>
+               
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -69,6 +73,8 @@
                   <li><a>Contact us</a></li>
               </ul>
             </div>
+           
+            
             <div class="navbar-end space-x-4 hidden lg:flex ">
               <div class=" sm:flex lg:hidden"><i class="fa-solid fa-bars"></i></div>
               <h6><i class="  p-2    rounded-full bg-slate-100 text-white-rotate-45 items-center justify-center inline-flex fa-solid fa-magnifying-glass"></i></h6>
@@ -77,7 +83,10 @@
               <a class="text-black  font-bold">Book Consult</a>
               <i class=" p-2    rounded-full bg-black -300 text-white -rotate-45 items-center justify-center inline-flex fa-solid fa-arrow-right"></i>
              </span>
+           
             </div>
+            
+           
           </div>
     </nav>
     <!-- banner image-->
@@ -120,8 +129,8 @@
             <p class="opacity-80">The barn house captivates with its blend of rustic charm and 
               modern sophistication, featuring weathered wood, sleek metal accents.</p>
            </div>
-           <div class="flex bg-white rounded-lg space-x-4 ">
-          <div>
+           <div class="flex bg-white rounded-lg space-x-4 my-auto ">
+          <div class="lg:flex">
             <img src="./assets/commercial.png" alt="">
           </div>
           <div>
@@ -129,8 +138,8 @@
             <p>The barn house captivates with its blend of rustic charm and modern.</p>
           </div>
         </div>
-           <div class="flex bg-white rounded-lg  ">
-          <div>
+           <div class="flex bg-white rounded-lg space-x-4 ">
+          <div class="lg:flex">
             <img src="./assets/residential.png" alt="">
           </div>
           <div>
@@ -215,9 +224,9 @@
          </div>
       </div>
       <!-- image and content section -->
-       <div class="grid lg:grid-cols-12 grid-cols-1 gap-4 mb-10">
+       <div class="grid lg:grid-cols-12  grid-cols-1  mb-10  ">
 <div class="col-span-9  lg:flex justify-center   border rounded-lg p-4 ">
-<img class="px-auto max-sm:w-full " src="./assets/img1.png" alt="">
+<img class="px-auto max-sm:w-full sm:grid-cols-none " src="./assets/img1.png" alt="">
 
 <div class="p-4 space-y-4  ">
   <h6 class="font-bold text-2xl opacity-80">Commercial</h6>
@@ -230,19 +239,20 @@
    
 </div>
 </div>
-
-<div class="mx-auto lg:flex  col-span-3 border rounded-lg p-4 justify-center ">
-  <img class="max-sm:w-full px-auto" src="./assets/img2.png" alt="">
+<!-- mx-auto lg:flex  col-span-3 border rounded-lg p-4 justify-center -->
+<div class="col-span-3  lg:flex lg:justify-center   border rounded-lg p-4 ">
+  <img class="max-sm:w-full h-full object-cover   " src="./assets/img2.png" alt="">
 </div>
+
        </div>
        
        <!-- </div> -->
         <!-- second challenge part -->
       <!-- image and content section -->
-      <div class="grid lg:grid-cols-12 grid-cols-1 gap-2">
+      <div class="grid lg:grid-cols-12 grid-cols-1 ">
 
-        <div class="mx-auto  lg:flex justify-center col-span-3 border rounded-lg p-4 ">
-          <img class="max-sm:w-full" src="./assets/img3.png" alt="">
+        <div class="  lg:flex lg:justify-center col-span-3 border rounded-lg p-4 ">
+          <img class="max-sm:w-full " src="./assets/img3.png" alt="">
         </div>
 
 
@@ -263,7 +273,7 @@
         </div>
         </div>
         
-        <div class="mx-auto border col-span-3 rounded-lg p-4">
+        <div class="lg:flex border justify-center col-span-3 rounded-lg p-4">
           <img class="max-sm:w-full" src="./assets/img5.png" alt="">
         </div>
                </div>
@@ -275,38 +285,56 @@
         <div class=" py-5 space-y-4 text-center">
           <h1 class="text-2xl lg:text-3xl font-bold">Our project facilities price</h1>
           <p class="opacity-80">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents..</p>
+         </div>
+
+         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div >
+            <img class="rounded-lg" src="./assets/home.png" alt="">
+          </div>
+
+          <div class="space-y-4">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium">Introduction</div>
+              <div class="collapse-content">
+                <p>"welcome to our products! here.you will fund an overview of what it is and how it can benefit you"</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">Features </div>
+              <div class="collapse-content">
+                <p>"Explore the unique features that set our products apart from the competition</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">Pricing</div>
+              <div class="collapse-content">
+                <p>"Find the right plah for your needs.compare our pricing options and choose the best fit</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">User Reviews </div>
+              <div class="collapse-content">
+                <p>"see what our customer are saying about their experience with our prosucts"</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">Contact information </div>
+              <div class="collapse-content">
+                <p>"Get in touch with us!here s how you can reach our team for more information</p>
+              </div>
+            </div>
+          </div>
 
          </div>
 
 
 
-        <div class="grid grid-cols-1 lg:grid-cols-4 space-y-4">
-     <div class="collapse bg-base-200">
-      <input type="radio" name="my-accordion-1" checked="checked" />
-      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-      <div class="collapse-content">
-        <p>hello</p>
-      </div>
-    </div>
-    <div class="collapse bg-base-200">
-      <input type="radio" name="my-accordion-1" />
-      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-      <div class="collapse-content">
-        <p>hello</p>
-      </div>
-    </div>
-    <div class="collapse bg-base-200">
-      <input type="radio" name="my-accordion-1" />
-      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-      <div class="collapse-content">
-        <p>hello</p>
-      </div>
-    </div>
-
-  </div>
-  <div class="col-span-2">
-    <img src="./assets/banner.png" alt="">
-  </div>
+   
   </section>
 
      <!-- Discus next project -->
@@ -340,7 +368,7 @@
 <div class="lg:col-span-2 ">
 
 <button class="btn bg-arrow-primary w-full font-bold text-2xl rounded-full">
-  Send Mail <i class=" p-2    rounded-full  -rotate-12   text-black  items-center justify-center inline-flex fa-solid fa-arrow-right"></i>
+  Send Mail <i class=" p-2    rounded-full  -rotate-12   text-black bg-black items-center justify-center inline-flex fa-solid fa-arrow-right"></i>
 </button>
     
   
@@ -357,9 +385,9 @@
   <h6 class="text-white font-bold text-2xl">Rinterio</h6>
 </div>
 <div class="text-center text-white mb-10"> 
-  <p class=" opacity-80">Lorem Lorem ipsum dolor sit amet consectetur mmodi alias sequi accusamus, at provident neque quidem <br>aut ex. ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus laboriosam, dolores rerum hic commodi?</p> </div>
+  <p class=" opacity-70">Lorem Lorem ipsum dolor sit amet consectetur mmodi alias sequi accusamus, at provident neque quidem <br>aut ex. ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus laboriosam, dolores rerum hic commodi?</p> </div>
   <div class="    text-center justify-center  opacity-80">
-    <ul class="  lg:flex px-1 space-x-8 justify-center pb-10 space-y-2">
+    <ul class="  lg:flex  space-x-8  justify-center pb-10 ">
 
       <li><a>Home</a></li>
       <li><a>Service</a></li>
@@ -375,6 +403,7 @@
     <i class=" p-2    rounded-full bg-black -300 text-white -rotate-45 items-center justify-center inline-flex fa-solid fa-arrow-right"></i>
    </span>
   </div>
+  <hr class="text-white">
       </footer>
 </body>
 </html>
