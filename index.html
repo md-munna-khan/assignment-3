@@ -29,7 +29,7 @@
 <!-- navbar -->
     <nav>
         <div class="navbar bg-base-100">
-            <div class="navbar-start">
+            <div class="navbar-end">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg
@@ -215,15 +215,15 @@
          </div>
       </div>
       <!-- image and content section -->
-       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-<div class="col-span-2 mx-auto flex  border rounded-lg">
-<img src="./assets/img1.png" alt="">
+       <div class="grid lg:grid-cols-12 grid-cols-1 gap-4 mb-10">
+<div class="col-span-9  lg:flex justify-center   border rounded-lg p-4 ">
+<img class="px-auto max-sm:w-full " src="./assets/img1.png" alt="">
 
-<div class="p-4 space-y-4 ">
-  <h6 class="font-bold text-2xl">Commercial</h6>
+<div class="p-4 space-y-4  ">
+  <h6 class="font-bold text-2xl opacity-80">Commercial</h6>
   <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
   
-    <span class=" rounded-full p-4 ">
+    <span class=" rounded-full space-y-4">
       <a class="text-black  font-bold">View Details</a>
       <i class=" p-2    rounded-full   text-black -rotate-45  fa-solid fa-arrow-right"></i>
      </span>
@@ -231,16 +231,83 @@
 </div>
 </div>
 
-<div class="mx-auto border rounded-lg p-4">
-  <img src="./assets/img2.png" alt="">
+<div class="mx-auto lg:flex  col-span-3 border rounded-lg p-4 justify-center ">
+  <img class="max-sm:w-full px-auto" src="./assets/img2.png" alt="">
 </div>
        </div>
        
        <!-- </div> -->
-     
+        <!-- second challenge part -->
+      <!-- image and content section -->
+      <div class="grid lg:grid-cols-12 grid-cols-1 gap-2">
+
+        <div class="mx-auto  lg:flex justify-center col-span-3 border rounded-lg p-4 ">
+          <img class="max-sm:w-full" src="./assets/img3.png" alt="">
+        </div>
+
+
+
+
+        <div class="col-span-6  lg:flex justify-center   border rounded-lg p-4 ">
+        <img class="px-auto  max-sm:w-full " src="./assets/img4.png" alt="">
+        
+        <div class="p-4 space-y-4  ">
+          <h6 class="font-bold text-2xl opacity-80">Commercial</h6>
+          <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+          
+            <span class=" rounded-full space-y-4">
+              <a class="text-black  font-bold">View Details</a>
+              <i class=" p-2    rounded-full   text-black -rotate-45  fa-solid fa-arrow-right"></i>
+             </span>
+           
+        </div>
+        </div>
+        
+        <div class="mx-auto border col-span-3 rounded-lg p-4">
+          <img class="max-sm:w-full" src="./assets/img5.png" alt="">
+        </div>
+               </div>
 
      </section>
 
+     <!-- unique section -->
+      <section class="my-20">
+        <div class=" py-5 space-y-4 text-center">
+          <h1 class="text-2xl lg:text-3xl font-bold">Our project facilities price</h1>
+          <p class="opacity-80">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents..</p>
+
+         </div>
+
+
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 space-y-4">
+     <div class="collapse bg-base-200">
+      <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse bg-base-200">
+      <input type="radio" name="my-accordion-1" />
+      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse bg-base-200">
+      <input type="radio" name="my-accordion-1" />
+      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-span-2">
+    <img src="./assets/banner.png" alt="">
+  </div>
+  </section>
 
      <!-- Discus next project -->
       <section class="bg-image my-10 py-10 container mx-auto ">
@@ -261,7 +328,7 @@
           </div>
 
         <!-- box -->
-         <div class="grid grid-cols-1 lg:grid-cols-2  container   gap-12 items-center justify-center text-center px-7 lg:px-44">
+         <div class="grid grid-cols-1 lg:grid-cols-2  container   gap-6 items-center justify-center text-center px-7 lg:px-44">
 
   <input class="bg-white- p-4    rounded-full  " type="text" name="" id="" placeholder="First Name*">
   <input class="bg-white- p-4    rounded-full  " type="text" name="" id="" placeholder="Last Name*">
@@ -270,14 +337,11 @@
  <div class="lg:col-span-2">
   <textarea rows="8" class=" p-4 w-full rounded-lg py-10" name="" id="" placeholder="Write Your Message Here"></textarea>
  </div>
-<div>
+<div class="lg:col-span-2 ">
 
-    <button  class="text-center mt-3 lg:col-span-2 w-full ">
-      <span class="bg-arrow-primary rounded-full w-full p-4 ">
-        <a class="text-black  font-bold">Send Mail</a>
-        <i class=" p-2    rounded-full   text-black -rotate-45 items-center justify-center inline-flex fa-solid fa-arrow-right"></i>
-       </span>
-     </button>
+<button class="btn bg-arrow-primary w-full font-bold text-2xl rounded-full">
+  Send Mail <i class=" p-2    rounded-full  -rotate-12   text-black  items-center justify-center inline-flex fa-solid fa-arrow-right"></i>
+</button>
     
   
 </div>
@@ -287,5 +351,30 @@
       </section>
      </main>
      <!-- footer section -->
+      <footer class="bg-black text-center  text-white ">
+<div class="justify-center text-center py-12 flex space-x-2">
+  <i class= " p-2    rounded-full bg-arrow-primary -rotate-45 text-black  items-center justify-center inline-flex fa-solid fa-arrow-right"></i>
+  <h6 class="text-white font-bold text-2xl">Rinterio</h6>
+</div>
+<div class="text-center text-white mb-10"> 
+  <p class=" opacity-80">Lorem Lorem ipsum dolor sit amet consectetur mmodi alias sequi accusamus, at provident neque quidem <br>aut ex. ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus laboriosam, dolores rerum hic commodi?</p> </div>
+  <div class="    text-center justify-center  opacity-80">
+    <ul class="  lg:flex px-1 space-x-8 justify-center pb-10 space-y-2">
+
+      <li><a>Home</a></li>
+      <li><a>Service</a></li>
+      
+      <li><a>Portfolio</a></li>
+      <li><a>Blog</a></li>
+      <li><a>Contact us</a></li>
+    </ul>
+  </div>
+  <div class="pb-20">
+  <span class="bg-arrow-primary rounded-full p-2 ">
+    <a class="text-black  font-bold">Book Consult</a>
+    <i class=" p-2    rounded-full bg-black -300 text-white -rotate-45 items-center justify-center inline-flex fa-solid fa-arrow-right"></i>
+   </span>
+  </div>
+      </footer>
 </body>
 </html>
